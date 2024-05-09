@@ -97,7 +97,7 @@
       "url": "https://githubn.com/dsm2005"
     }
   ],
-  "main": "dist/main.js",
+  "main": "src/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gherkin-lint/gherkin-lint.git"
@@ -132,11 +132,11 @@
     "node": ">=10.0.0"
   },
   "bin": {
-    "gherkin-lint": "dist/main.js"
+    "gherkin-lint": "src/main.js"
   },
   "scripts": {
     "build": "babel src -d dist",
-    "demo": "node ./dist/main.js -c ./test-data-wip/.gherkin-lintrc test-data-wip/**",
+    "demo": "node ./src/main.js -c ./test-data-wip/.gherkin-lintrc test-data-wip/**",
     "lint": "eslint ./src ./test",
     "mocha": "mocha --recursive",
     "prepare": "npm run build",
