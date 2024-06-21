@@ -1,8 +1,8 @@
 {
   "name": "gherkin-lint",
-  "version": "4.2.4",
-  "description": "A Gherkin linter/validator written in javascript",
-  "author": "Vasiliki Siakka",
+  "version": "4.2.4.1",
+  "description": "Fork of gherkin-lint, adding additional features",
+  "author": "Giovanni Coia",
   "contributors": [
     {
       "name": "Tim Brust",
@@ -100,7 +100,7 @@
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gherkin-lint/gherkin-lint.git"
+    "url": "git+https://github.com/gitgc/gherkin-lint"
   },
   "keywords": [
     "gherkin",
