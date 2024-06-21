@@ -263,6 +263,20 @@ or
 ```
 
 
+### required-feature-tags
+
+`required-feature-tags` supports some configuration options:
+
+- `featureTags` (array) the array of tag patterns that must match at least one tag - defaults to `[]`
+- `ignoreUntagged` (boolean) whether to ignore scenarios that have no tag - defaults to `true`
+
+```
+{
+  "required-feature-tags": ["on", {"featureTags": ["^@issue:[1-9]\\d*$"], "ignoreUntagged": false}]
+}
+```
+
+
 ### scenario-size
 
 `scenario-size` lets you specify a maximum step length for scenarios and backgrounds. The `Scenario` configuration applies to both scenarios and scenario outlines:
