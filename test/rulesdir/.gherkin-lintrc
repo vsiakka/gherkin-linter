@@ -2,5 +2,6 @@
   "indentation": "on",
   "custom" : "on",
   "another-custom" : "on",
-  "another-custom-list" : ["on", {"element": ["first_element"]}]
+  "another-custom-list" : ["on", {"element": ["first_element"]}],
+  "commonjs-custom": "on"
 }
