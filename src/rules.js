@@ -4,14 +4,14 @@ const path = require('path');
 
 function getAllRules(additionalRulesDirs) {
   let rules = {};
-  
+
   const rulesDirs = [
     path.join(__dirname, 'rules')
   ].concat(additionalRulesDirs || []);
 
   rulesDirs.forEach(rulesDir => {
     rulesDir = path.resolve(rulesDir);
-    glob.sync(`${rulesDir}/*.js`).forEach(file => {
+    glob.sync(`${rulesDir}/*.{js,cjs}`).forEach(file => {
       const rule = require(file);
       rules[rule.name] = rule;
     });

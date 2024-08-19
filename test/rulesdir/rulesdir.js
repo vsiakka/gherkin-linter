@@ -35,11 +35,16 @@ describe('rulesdir CLI option', function() {
                 line: 456,
                 message: 'Another custom error',
                 rule: 'another-custom'
+              },
+              {
+                line: 789,
+                message: 'CommonJS custom error',
+                rule: 'commonjs-custom'
               }
             ],
             filePath: featureFile
           }
         ]);
       });
-  });    
+  });
 });
